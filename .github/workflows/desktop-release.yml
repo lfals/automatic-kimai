@@ -93,7 +93,7 @@ jobs:
       - name: Check build dependency security and compatibility
         shell: bash
         working-directory: nativephp/electron
-        run: node --test build/dependency-compat.test.mjs
+        run: node --test build/dependency-compat.test.mjs build/vite-env.test.mjs
       - name: Create sanitized build environment and check privacy
         shell: bash
         run: |

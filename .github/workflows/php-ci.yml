@@ -71,7 +71,7 @@ jobs:
           sh -n ../../desktop-preview/install-desktop.sh
           test -s ../../desktop-preview/automatic-kimai.png
       - name: Check build dependency security and compatibility
-        run: node --test build/dependency-compat.test.mjs
+        run: node --test build/dependency-compat.test.mjs build/vite-env.test.mjs
       - name: Test desktop update flow and metadata
         run: node --test src/main/updates.test.mjs ../../scripts/create-update-manifests.test.mjs ../../scripts/desktop-version.test.mjs ../../scripts/prepare-desktop-release.test.mjs
       - name: Validate canonical desktop version and lockfile

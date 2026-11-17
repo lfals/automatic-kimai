@@ -3,6 +3,8 @@
 .env
 .env.*
 !.env.example
+!nativephp/electron/.env.production
+!nativephp/electron/.env.development
 profile.json
 sources.json
 auth.json
